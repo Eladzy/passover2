@@ -1,0 +1,16 @@
+USE [PassOver2]
+GO
+
+/****** Object:  StoredProcedure [dbo].[SHOW_INVENTORY]    Script Date: 5/1/2019 7:22:13 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE procedure  [dbo].[SHOW_INVENTORY]
+@id int
+as
+SELECT PRODUCT.PROD_NAME as Name,PRODUCT.PROD_PRICE as Price,PRODUCT.PROD_QUANTITY as Quantity From PRODUCT WHERE PROD_PROVIDER_NUMBER=@id
+GO
+

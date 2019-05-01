@@ -1,0 +1,20 @@
+USE [PassOver2]
+GO
+
+/****** Object:  StoredProcedure [dbo].[INSERT_PROD]    Script Date: 5/1/2019 7:20:44 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+create procedure [dbo].[INSERT_PROD]
+@prodName nchar(20),
+@providerNum int,
+@prodPrice int,
+@prodQuantity int
+as
+insert into PRODUCT(PROD_NAME,PROD_PROVIDER_NUMBER,PROD_PRICE,PROD_QUANTITY) values(@prodName,@providerNum,@prodPrice,@prodQuantity);
+
+GO
+

@@ -1,0 +1,22 @@
+USE [PassOver2]
+GO
+
+/****** Object:  StoredProcedure [dbo].[INSERT_C]    Script Date: 5/1/2019 7:19:01 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+create procedure [dbo].[INSERT_C]
+@name nchar(20),
+@lastName nchar(20),
+@card nchar(16),
+@user nchar(20),
+@password nchar(20)
+as
+Begin
+insert into CUSTOMER(C_FIRST_NAME,C_LAST_NAME,C_CardNUM,C_USERNAME,C_PASSWORD) values(@name,@lastName,@card,@user,@password)
+End
+GO
+

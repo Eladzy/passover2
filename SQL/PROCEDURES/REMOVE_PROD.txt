@@ -1,0 +1,17 @@
+USE [PassOver2]
+GO
+
+/****** Object:  StoredProcedure [dbo].[REMOVE_PROD]    Script Date: 5/1/2019 7:21:12 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+create procedure [dbo].[REMOVE_PROD]
+@amount int,
+@id int
+as
+update PRODUCT set PROD_QUANTITY-=@amount where PROD_ID=@id;
+GO
+

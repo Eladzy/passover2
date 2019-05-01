@@ -1,0 +1,17 @@
+USE [PassOver2]
+GO
+
+/****** Object:  StoredProcedure [dbo].[SHOW_CART]    Script Date: 5/1/2019 7:21:46 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+create procedure [dbo].[SHOW_CART]
+@custId int
+as
+
+SELECT PRODUCT.PROD_NAME AS Product ,PRODUCT.PROD_PRICE AS Price,O_QUANTITY as Quantity,O_TOTALPRICE as Total_Price FROM ORDERS inner join PRODUCT on PROD_ID=O_PROD_ID WHERE O_CUSTNUMBER=@custId
+GO
+

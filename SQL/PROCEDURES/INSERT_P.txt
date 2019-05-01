@@ -1,0 +1,18 @@
+USE [PassOver2]
+GO
+
+/****** Object:  StoredProcedure [dbo].[INSERT_P]    Script Date: 5/1/2019 7:20:09 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+create procedure [dbo].[INSERT_P] 
+@user nchar(20),
+@password nchar(20),
+@company nchar(20)
+as
+INSERT INTO PROVIDER(P_USERNAME,P_PASSWORD,P_COMPANY) values(@user,@password,@company)
+GO
+
