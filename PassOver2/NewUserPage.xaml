@@ -1,0 +1,34 @@
+﻿<Window x:Class="PassOver2.NewUserPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PassOver2"
+        mc:Ignorable="d"
+        Title="New User" Height="410.033" Width="459.539">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <TextBlock  FontSize="35" HorizontalAlignment="Left" Margin="66,10,0,0" TextWrapping="Wrap" Text="Register new user" VerticalAlignment="Top" Height="52" Width="308" RenderTransformOrigin="0.488,0.544" Grid.RowSpan="2"/>
+        <Button Name="SaveUserBtn" Content="Apply" FontSize="10" HorizontalAlignment="Left" Margin="94,9.6,0,0" Grid.Row="6" VerticalAlignment="Top" Width="75" Click="SaveUserBtn_Click"/>
+        <Button Name="closeBtn" Content="Close" FontSize="10" HorizontalAlignment="Left" Margin="280,9.6,0,0" Grid.Row="6" VerticalAlignment="Top" Width="75" Click="CloseBtn_Click"/>
+        <Label Name="firstNameLbl"  Content="First Name" FontSize="10" HorizontalAlignment="Left" Margin="33,35.6,0,0" Grid.Row="1" VerticalAlignment="Top" Width="105" Height="27" Grid.RowSpan="2"/>
+        <Label Name="custUserNmaeLbl" Content="User Name" FontSize="10" HorizontalAlignment="Left" Margin="33,25.8,0,0" Grid.Row="3" VerticalAlignment="Top" Width="105" Height="27"/>
+        <Label Name="lastNameLbl" Content="Last Name" FontSize="10" HorizontalAlignment="Left" Margin="33,35.2,0,0" Grid.Row="2" VerticalAlignment="Top" Width="105" Height="27"/>
+        <TextBox Name="firstNameBox" FontSize="10" HorizontalAlignment="Left" Height="23" Margin="197,35.6,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="lastNameBox" FontSize="10" HorizontalAlignment="Left" Height="23" Margin="197,35.2,0,0" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="custUserNameBox" FontSize="10" HorizontalAlignment="Left" Height="23" Margin="197,28.8,0,0" Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Name="UsrPasswordLbl" Content="Password" FontSize="10" HorizontalAlignment="Left" Margin="33,18.4,0,0" Grid.Row="4" VerticalAlignment="Top" Width="105" Height="27"/>
+        <TextBox Name="usrPassBox" FontSize="10" HorizontalAlignment="Left" Height="23" Margin="197,21.4,0,0" Grid.Row="4" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Name="CredLbl" Content="Credit Card Number" FontSize="10" HorizontalAlignment="Left" Margin="33,18,0,0" Grid.Row="5" VerticalAlignment="Top" Width="105" Height="27"/>
+        <TextBox Name="creditBox" FontSize="10" HorizontalAlignment="Left" Height="23" Margin="197,22,0,0" Grid.Row="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

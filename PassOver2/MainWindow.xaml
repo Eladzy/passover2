@@ -1,0 +1,22 @@
+﻿<Window x:Name="OpeningWindow" x:Class="PassOver2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PassOver2"
+        mc:Ignorable="d"
+        Title="Elad Express" Height="500" Width="500" MinHeight="500" MinWidth="500" MaxWidth="500" MaxHeight="500">
+    <Grid Width="500" Height="500" MaxWidth="500" MaxHeight="500" MinWidth="500" MinHeight="500">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="178*"/>
+            <RowDefinition Height="109*"/>
+            <RowDefinition Height="213*"/>
+        </Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="Center" Margin="110,110,129,7" TextWrapping="Wrap" FontSize="40" Text="Welcome" VerticalAlignment="Center" Height="61" Width="261" TextAlignment="Center"/>
+        <Button x:Name="UserLogIn" Content="User Log-In" FontSize="10" HorizontalAlignment="Center" Margin="148,35,277,56.2" VerticalAlignment="Center" Width="75" Height="18" Grid.Row="1" Click="UserLogIn_Click"/>
+        <Button Name="NewUser" Content="New User" FontSize="10" HorizontalAlignment="Center" Margin="148,69,277,24.2" VerticalAlignment="Center" Width="75" Height="16" RenderTransformOrigin="0.5,0.5" Grid.Row="1" Click="NewUser_Click"/>
+        <Button Name="ProviderLogIn" Content="Provider Log-In" FontSize="10" HorizontalAlignment="Center" Margin="249,35,176,56.2" VerticalAlignment="Center" Width="75" Grid.Row="1" Click="ProviderLogIn_Click"/>
+        <Button Name="NewProvider" FontSize="10" Content="New Provider" HorizontalAlignment="Center" Margin="249,69,176,24.2" VerticalAlignment="Center" Width="75" Grid.Row="1" Click="NewProvider_Click"/>
+        <Button Name="MainExit" Content="Exit"  HorizontalAlignment="Center" Margin="195,32.8,230,161" VerticalAlignment="Center" Width="75" Click="MainExit_Click" Grid.Row="2"/>
+    </Grid>
+</Window>
